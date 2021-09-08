@@ -3,6 +3,7 @@
 	"displayName": "change-symbol",
 	"description": "自动将中文符号转换为英文符号",
 	"version": "0.0.1",
+    "publisher": "brand",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
