@@ -2,7 +2,7 @@
 	"name": "change-symbol",
 	"displayName": "中文符号转英文符号",
 	"description": "自动将中文符号转换为英文符号",
-	"version": "1.0.0",
+	"version": "1.0.1",
     "publisher": "brand",
 	"engines": {
 		"vscode": "^1.60.0"

@@ -1,22 +1,22 @@
 # change-symbol README
 
-×Ô¶¯½«ÖĞÎÄ·ûºÅ×ª»»ÎªÓ¢ÎÄ·ûºÅ£¬×ª»»±íÈçÏÂ
+è‡ªåŠ¨å°†ä¸­æ–‡ç¬¦å·è½¬æ¢ä¸ºè‹±æ–‡ç¬¦å·,è½¬æ¢è¡¨å¦‚ä¸‹
 
-``` text = text.replace(/£¬/g, ",");
-    text = text.replace(/¡£/g, ".");
-    text = text.replace(/¡¶/g, "<");
-    text = text.replace(/¡·/g, ">");
-    text = text.replace(/£¿/g, "?");
-    text = text.replace(/£»/g, ";");
-    text = text.replace(/£º/g, ":");
-    text = text.replace(/¡®/g, "'");
-    text = text.replace(/¡¯/g, "'");
-    text = text.replace(/¡°/g, "\"");
-    text = text.replace(/¡±/g, "\"");
-    text = text.replace(/£¡/g, "!");
-    text = text.replace(/£¨/g, "(");
-    text = text.replace(/£©/g, ")");
-    text = text.replace(/¡ª¡ª/g, "_");
+``` text = text.replace(/,/g, ",");
+    text = text.replace(/./g, ".");
+    text = text.replace(/</g, "<");
+    text = text.replace(/>/g, ">");
+    text = text.replace(/?/g, "?");
+    text = text.replace(/;/g, ";");
+    text = text.replace(/:/g, ":");
+    text = text.replace(/'/g, "'");
+    text = text.replace(/'/g, "'");
+    text = text.replace(/"/g, "\"");
+    text = text.replace(/"/g, "\"");
+    text = text.replace(/!/g, "!");
+    text = text.replace(/(/g, "(");
+    text = text.replace(/)/g, ")");
+    text = text.replace(/_/g, "_");
 ```
 
-×¢Òâ£º²å¼ş²»»á¶Ô¼üÈë»·¾³½øĞĞÅĞ¶Ï£¬¼üÈë¾Í»áÁ¢Âí¸Ä±ä£¬Èç¹û»¹Ïë¼üÈëÉÏÊöÖĞÎÄ×Ö·û£¬ÇëÏÈ½ûÓÃ²å¼ş
+æ³¨æ„:æ’ä»¶ä¸ä¼šå¯¹é”®å…¥ç¯å¢ƒè¿›è¡Œåˆ¤æ–­,é”®å…¥å°±ä¼šç«‹é©¬æ”¹å˜,å¦‚æœè¿˜æƒ³é”®å…¥ä¸Šè¿°ä¸­æ–‡å­—ç¬¦,è¯·å…ˆç¦ç”¨æ’ä»¶
