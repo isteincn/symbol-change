@@ -5,16 +5,17 @@ import { Parser } from './parser';
 export function activate(context: vscode.ExtensionContext) {
 
     let activeEditor: vscode.TextEditor;
+    let textLast:string;
     let parser: Parser = new Parser();
 
     // Called to handle events below
     let updateDecorations = function (useHash = false) {
         // * if no active window is open, return
         if (!activeEditor) {return;}
-
+        if(textLast === activeEditor.document.getText()) {return;}
+        
         // Finds the single line comments using the language comment delimiter
-        parser.changeSymbol(activeEditor);
-
+        textLast = parser.changeSymbol(activeEditor);
         // Apply the styles set in the package.json
         //parser.ApplyDecorations(activeEditor);
     };
