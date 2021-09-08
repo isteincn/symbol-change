@@ -28,13 +28,10 @@ export class Parser {
 		text = text.replace(/“/g, "\"");
 		text = text.replace(/”/g, "\"");
 		text = text.replace(/！/g, "!");
-		text = text.replace(/￥/g, "$");
-		text = text.replace(/……/g, "^");
 		text = text.replace(/（/g, "(");
 		text = text.replace(/）/g, ")");
 		text = text.replace(/——/g, "_");
-		text = text.replace(/、/g, "\\");
-		text = text.replace(/·/g, "`");
+
 		activeEditor.edit((editor) => {
 			const doc = activeEditor.document;
 			const startPos = new vscode.Position(0, 0);
